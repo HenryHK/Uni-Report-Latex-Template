@@ -1,0 +1,352 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTex Template for University Report/Paper
+% Version 1.0
+% Author: Lin Han
+% 08/Oct./2017
+%
+% This template is created based on one previous work from
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Instructions for using this template:
+% This title page is capable of being compiled as is. This is not useful for 
+% including it in another document. To do this, you have two options: 
+%
+% 1) Copy/paste everything between \begin{document} and \end{document} 
+% starting at \begin{titlepage} and paste this into another LaTeX file where you 
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and 
+% move this file to the same directory as the LaTeX file you wish to add it to. 
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{University Report/Paper Template}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE The University of Sydney}\\[1.5cm] % Name of your university/college
+\textsc{\Large School of Information Technology}\\[0.5cm] % Major heading such as course name
+\textsc{\large INFO5993 Research Methods - Assignment I}\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Report on Database Searching Result, Annotated Bibliography, and Proposing methodologies}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Lin \textsc{Han} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+Dr. Vincent \textsc{Gramoli} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[2cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics{logo.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+
+% \begin{abstract}
+% Your abstract.
+% \end{abstract}
+
+\section{Introduction}
+
+% Blockchain is one of the most cutting edge technologies in the world nowadays. Not limited to cryptocurrencies like Bitcoin, Etherum, and etc., blockchain enables innovations in wide range of fields, such as distributed cloud storage, digital identity, and smart contracts.
+% \newline
+% \newline
+% This report is trying to give a overview of the research base about blockchain, cryptocurrencies, and zero knowledge contingent payments, namely famous conferences and journals, research groups and people. Also, a list of possible unaddressed problems will be given to show possible research directions for my research project. In addition, several core articles or books in this area will be identified along with their annotated bibliography. At the end of this report, a summary of potential research methods will be given on the addressed questions.
+
+\section{Research Base}
+\label{sec:research base}
+
+\subsection{List of A*, A Conferences and Journals}
+% A* conferences and journals:
+% \begin{enumerate}
+% \item ACM Symposium on Principles of Distributed Computing - PODC
+% \item ACM Symposium on Operating Systems Principles - SOSP
+% \item IEEE Transactions on Parallel and Distributed Systems - TPDS
+% \end{enumerate}
+% A conferences and journals:
+% \begin{enumerate}
+% \item IEEE International Symposium on Network Computing and Applications - NCA
+% \item EuroSys
+% \item IEEE/IFIP International Conference on Dependable Systems - DSN
+% \end{enumerate}
+
+\subsection{Research Groups}
+
+% \begin{enumerate}
+% \item Initiative for Cryptocurrency and Contracts (IC3) 
+% \item University of Sydney Concurrent Systems Research Group
+% \item Cornell University Systems and Networking Research Group
+% \end{enumerate}
+
+\section{Research Problems}
+\label{sec:research problems}
+
+% Based on the research and the current progress of RedBelly Blockchain by CSRG, there are three potential problems identified to research which can enrich current RedBelly Blockchain:
+
+% \begin{enumerate}
+% \item Is it possible to make use of an existing zero knowledge proof library in a blockchain system that does not require delay between block creation?
+% \item Is it possible to constraint the library in the number of participants to which messages should be broadcast so that the transaction remains consistent?
+% \item Is it possible to make the content of a transaction private (by using for example public key cryptosystems) so that only the payer and the payee can benefit from the transaction?
+% \end{enumerate}
+% The above three problems mainly focuses on the zero knowledge contingent proof in blockchain, in detail, the possibility of its integration with RedBelly Blockchain and mobile devices.
+
+\section{Core Articles and Books}
+\label{sec:core articles and books}
+
+\subsection{Efficient Zero-Knowledge Contingent Payments in Cryptocurrencies Without Scripts\cite{Banasik2016}}
+
+% In this paper, the authors stated the possibility and method to create non-trivial efficient 
+% smart contracts using the standard transactions only by constructing efficient Zero-Knowledge 
+% Contingent Payment protocol for a large class of NP-relations. In particular, their protocol 
+% can be used to sell a factorization \textit{(p,q)} of an RSA modulus $$n=pq$$.\\ The paper 
+% shows that their techniques can be used to implement the contract called \"trading across 
+% chains\". Though their experiment is limited to theory construction, it still stated a 
+% constructive way to implement Zero-Knowledge contingent payments in Cryptocurrencies without 
+% Scripts. For my own research problems, their method may be a solution to RedBelly Blockchain 
+% whose scripts is still quite a draft now.
+
+\subsection{On the Danger of Private Blockchains\cite{Gra16}}
+
+% In this paper, the authors explore the use of the Ethereum blockchain protocol in the context 
+% of a private chain where the set of participants is controlled. The paper argues that foundations 
+% are needed in order to precisely capture the guarantees of the consensus protocols of novel 
+% blockchain systems before one can deploy them safely. To this end, the authors define the 
+% termination of consensus to characterize when blockchain transactions commit and describe the 
+% existence of the Blockchain Anomaly in existing proof-of-work private chains. During the development
+% of mobile wallet of RedBelly Blockchain, the same consideration is needed though mobile devices runs
+% a light version of the whole node.
+
+\subsection{The Balance Attack or Why Forkable Blockchains Are Ill-Suited for Consortium\cite{NG17}}
+
+% In this paper, the authors build up their analysis on captures the tradeoff between the network 
+% delay and the mining power of the attacker needed to double-spend in the GHOST protocol with high 
+% probability. The authors quantify their analysis in the settings of the Ethereum testnet of the R3 
+% consortium where we show that a single machine needs to delay messages for 20 minutes to double 
+% spend while a coalition with a third of the mining power would simply need 4 minutes to double 
+% spend with 94\% of success. The article is a good argument on the non-forkable issue of blockchain.
+
+\subsection{The Blockchain Anomaly\cite{NG16}}
+
+% In this paper, the authors present the Blockchain Anomaly, an execution that they experienced 
+% when building their own private chain at NICTA/Data61. Even though this anomaly has never been 
+% acknowledged before, it may translate into dramatic consequences for the user of blockchains. 
+% Named after the infamous Paxos anomaly, this anomaly makes dependent transactions, like “Bob sends 
+% money to Carole after he received money from Alice” impossible. This anomaly relies on the fact 
+% that existing blockchains do not ensure consensus safety deterministically: there is no way for 
+% Bob to make sure that Alice actually sent him coins without Bob using an external mechanism, 
+% like converting these coins into a fiat currency that allows him to withdraw. We also explore 
+% smart contracts as a potential alternative to transactions in order to freeze coins, and show
+% implementations of smart contract that can suffer from the Blockchain anomaly and others that may 
+% cope with it. Though the condition limits to specific private chain, the same anomaly may occurs
+% during zero-knowledge contingent payments which is needed to be further investigated.
+
+% TODO: add conclusion, possible limitations, and reflections
+\subsection{(Leader/Randomization/Signature)-free Byzantine Consensus for Consortium Blockchains\cite{DBLP:journals/corr/CrainGLR17}}
+
+% In this paper, a new resilience optimal Byzantine consensus algorithm targeting consortium blockchains is proposed. 
+% To this end, it first revisits the consensus validity property by requiring that the decided value
+% satisfies a predefined predicate. Then the paper presents a new modilar Byzantine consensus algorithm that relies 
+% neither on a leader, nor on signatures, nor on randomization. It consists of a reduction of multivalued 
+% Byzantine consensus to binary Byzantine consensus
+% satisfying this validity property.  In summary, the idea is to spawn concurrent instances of binary consensus but to decide
+% only after a sequence of two of these instances. The binary consensus instances result in a bitmask that the
+% reduction applies to a vector of multi-valued proposals to filter out a valid proposed value that is decided. 
+% At the end, the paper presents an underlying binary Byzantine consensus algorithm that assumes eventual synchrony
+% to terminate. This is the base idea of RedBelly Blockchain's consensus, as well as the base rock that should be 
+% strictly followed when I develop the mobile wallet.
+
+\subsection{Zerocash: Decentralized anonymous payments from bitcoin\cite{sasson2014zerocash}}
+
+% This paper gives out the way to construct a full-fledged ledger-based digital currency with strong 
+% privacy guarantees using \textit{zero-knowledge Succinct Non-interactive Arguments of Knowledge}(zk-SNARKs).
+% In summary, they firstly formulated and construct \textit{decentralized anonymous payments schemes}(DAP).
+% And then, they build the Zerocash, a instantiation of the DAP scheme. In addition to its privacy
+% features, their implementation gives out a relatively great performance - transaction less than 1kB and 
+% under 6ms to verify - compared to Zerocoin and is competitive with plain Bitcoin. The paper shows a
+% constructive way to integrate zero-knowledge proof into cryptocurrencies. Also, the SNARKs lib can be an 
+% choice used in my own project.
+
+\subsection{The electronic cash system based on non-interactive zero-knowledge proofs\cite{doi:10.1080/00207160.2014.933816}}
+
+% The authors propose a electronic cash system utilized by zero-knowledge proof featuring CCA anonymity, 
+% unforgeability, traceability and no double-spending. The paper also gives out the proof on allowing multiple
+% bank enrolling and user dynamically joining. The limitation of this paper obviously is that it targets at 
+% electronic cash system. But the methods it takes to make a transaction anonymous, but traceable inspires how
+% I can adopt zero knowledge proof into RedBelly Blockchain.
+
+\subsection{Succinct non-interactive zero-knowledge proofs with preprocessing for LOGSNP\cite{kalai2006succinct}}
+
+% In this paper, the authors show that if the prover and the verifier interacted in a (poly-logarithmic size) 
+% preamble phase, then some statements can be proved by relatively short noninteractive 
+% zero-knowledge arguments. In particular, the paper shows that in this model the satisfiability of a CNF 
+% formula $$\Psi(w_{1}, \ldots, w_{m})$$ of any size can be proved by a noninteractive zero-knowledge 
+% argument of ${\rm poly}(m)$ size, and the authors prove that for any language $L\in {\cal LOG}S{\cal NP}$
+% the membership $x\in L$ can be proved by a non-interactive zero-knowledge argument of size polylog $n$.
+% This is only a theory-proof paper illustrating a way using non-interactive zero-knowledge proof, but it can
+% be considered as one of the alternatives integrated into RedBelly Blockchain. In this way, the traffic loads
+% can be deduced during transactions. As a reference, Zerocash adopts this method.
+
+\subsection{Secure Sampling of Public Parameters for Succinct Zero Knowledge Proofs\cite{ben2015secure}}
+
+% This paper shows how public parameters for a class of non-interactive zero-knowledge proofs(NIZKs)
+% can be generated by a multi-party protocol, such that if at least one of the parties is honest, 
+% then the result is secure (in both aforementioned senses) and can be subsequently used for 
+% generating and verifying numerous proofs without any further trust. The authors design and implement 
+% such a protocol, tailored to efficiently support the state-of-the-art NIZK constructions with 
+% short and easy-to-verify proofs. The applying assumption of this paper highly aligns with the Byzantine
+% problems addressed by RedBelly Blockchain in which malicious parties exists. This paper may provide the 
+% solution to build zero knowledge contingent payment in RedBelly Blockchain.
+
+\subsection{Zero Knowledge Contingent Payment\cite{wiki2011zero}}
+
+% This wiki gives a brief introduction on how to make payments using Bitcoin which are released 
+% if and only if some knowledge is disclosed by the payee and to do this in a trustless manner 
+% where neither the payer or payee can cheat. In detail, a combination of a hash-locked transaction 
+% and a bitcoin-external protocol to set things up so that the data revealed in the hashlock release
+% is the data they need is used in this process. Comparing to Bitcoin, RedBelly Blockchain's Scripts
+% is still less function, however the way Bitcoin integrate Zero Knowledge Contingent Payment is a
+% good reference for my project.
+
+\subsection{Elliptic Curve Based Zero Knowledge Proofs and Their Applicability on Resource Constrained Devices\cite{ecc2011}}
+
+% In this paper, the authors focus on the application of ZKIP protocols on resource constrained 
+% devices. They study well-established ZKIP protocols based on the discrete logarithm problem and 
+% transform them under the ECC setting. Then, they implement the proposed protocols on Wiselib and 
+% present a thorough evaluation of the protocols on two popular hardware platforms equipped with 
+% low end microcontrollers (Jennic JN5139, TI MSP430) and 802.15.4 RF transceivers, 
+% in terms of code size, execution time, message size and energy requirements. The limitation is that
+% this paper is relatively old compared to the speed of hardware development. However, this work's 
+% results can be used as a good reference for me to integrate zero-knowledge proof into mobile wallet
+% of RedBelly Blockchain.
+
+\section{Summary of Potential Research Method}
+
+% All the three questions raised at the beginning of this report can be addressed
+% using \textit{Design (Prototyping) Reasearch} method, with proper \textit{benchmarks}.
+% \newline
+% \newline
+% The process will go like the following:
+
+% $$Design -> Prototyping -> Test -> Benchmark -> Refine$$
+% \newline
+% During the benchmark, certain inputs and outputs will be expected according to the requirements, 
+% including timing, traffic, and etc.
+% \newline
+% \newline
+% In addition, for the third question \textit{Is it possible to make the content of a transaction private (by using for example public key cryptosystems) so that only the payer and the payee can benefit from the transaction?},
+% a formal theory discussion should be made. 
+
+% \todo[inline, color=green!40]{This is an inline comment.}
+
+% \subsection{Tables and Figures}
+
+% Use the table and tabular commands for basic tables --- see Table~\ref{tab:widgets}, for example. You can upload a figure (JPEG, PNG or PDF) using the files menu. To include it in your document, use the includegraphics command as in the code for Figure~\ref{fig:frog} below.
+
+% % Commands to include a figure:
+% \begin{figure}
+% \centering
+% \includegraphics[width=0.5\textwidth]{frog.jpg}
+% \caption{\label{fig:frog}This is a figure caption.}
+% \end{figure}
+
+% \begin{table}
+% \centering
+% \begin{tabular}{l|r}
+% Item & Quantity \\\hline
+% Widgets & 42 \\
+% Gadgets & 13
+% \end{tabular}
+% \caption{\label{tab:widgets}An example table.}
+% \end{table}
+
+% \subsection{Mathematics}
+
+% \LaTeX{} is great at typesetting mathematics. Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+% $$S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+%       = \frac{1}{n}\sum_{i}^{n} X_i$$
+% denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+
+% \subsection{Lists}
+
+% You can make lists with automatic numbering \dots
+
+% \begin{enumerate}
+% \item Like this,
+% \item and like this.
+% \end{enumerate}
+% \dots or bullet points \dots
+% \begin{itemize}
+% \item Like this,
+% \item and like this.
+% \end{itemize}
+
+% We hope you find write\LaTeX\ useful, and please let us know if you have any feedback using the help menu above.
+
+\newpage
+\bibliography{bibliography.bib}
+\bibliographystyle{plain}
+
+\end{document}
